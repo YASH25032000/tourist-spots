@@ -12,7 +12,7 @@ const answ=process.env.CLOUDINARY_CLOUD_NAME;
                 <img class="img-fluid" alt="" src="<%=campground.images[0].url%>">
                 <% }else {%>
                 <img class="img-fluid" alt=""
-                    src="https://res.cloudinary.com/answ/image/upload/v1600103881/YelpCamp/lz8jjv2gyynjil7lswf4.png">
+                    src="<%=campground.images[0].url%>">
                 <% } %>
             </div>
             <div class="col-md-8">
