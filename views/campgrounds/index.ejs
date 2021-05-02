@@ -1,5 +1,4 @@
 <% layout('layouts/boilerplate')%>
-const answ=process.env.CLOUDINARY_CLOUD_NAME;
 <div id="cluster-map"></div>
 <div class="container">
     <h1>All Campgrounds</h1>
@@ -12,7 +11,7 @@ const answ=process.env.CLOUDINARY_CLOUD_NAME;
                 <img class="img-fluid" alt="" src="<%=campground.images[0].url%>">
                 <% }else {%>
                 <img class="img-fluid" alt=""
-                    src="<%=campground.images[0].url%>">
+                src="https://res.cloudinary.com/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload/v1600103881/YelpCamp/lz8jjv2gyynjil7lswf4.png">
                 <% } %>
             </div>
             <div class="col-md-8">
